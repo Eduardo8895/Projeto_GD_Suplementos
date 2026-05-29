@@ -14,18 +14,39 @@ header{
   background-color: rgb(255, 188, 65);
   grid-row: 1 /2;
   grid-column: 1 /6;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: end;
-  
-  
-  
-  
+  position: relative;
+  text-align: center;
+  padding: 50px;
   
 }
-.header1{
-  background-color: gray;
-  
+.Logo{
+  width: 200px;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+nav{
+margin-top: 50px; /* desce o menu */
+
+  display: flex;
+  justify-content: center;
+  gap: 150PX;
+}
+nav div{
+  margin-top: 20px;
+}
+
+
+nav a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover{
+  color: White;
 }
 aside{
   background-color: gray;
@@ -38,7 +59,7 @@ main{
   grid-column: 2 /6;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   
 }
 footer{

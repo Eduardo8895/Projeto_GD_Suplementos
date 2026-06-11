@@ -1,15 +1,17 @@
+/* Remove margens e espaçamentos padrão de todos os elementos e ajusta o box-sizing */
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 
 }
-
+/* Container principal usando grid, definindo 3 linhas e 6 colunas */
 .container{
   display: grid;
   grid-template: 60px auto 35px / repeat(6, fr);
   height: 100vh;
 }
+/* Estiliza o cabeçalho */
 header{
   background-color: rgb(255, 188, 65);
   grid-row: 1 /2;
@@ -19,6 +21,7 @@ header{
   padding: 50px;
   
 }
+/* Logo dentro do header */
 .Logo{
   width: 200px;
 
@@ -26,6 +29,7 @@ header{
   top: 10px;
   left: 10px;
 }
+/* Estiliza o menu de navegação */
 nav{
 margin-top: 50px; /* desce o menu */
 
@@ -33,11 +37,12 @@ margin-top: 50px; /* desce o menu */
   justify-content: center;
   gap: 150PX;
 }
+/* Pequeno ajuste de margem para divs dentro do nav */
 nav div{
   margin-top: 20px;
 }
 
-
+/* Estiliza os links do menu */
 nav a{
   text-decoration: none;
   color: black;
@@ -45,14 +50,17 @@ nav a{
   font-weight: bold;
   transition: 0.3s;
 }
+/* Efeito hover nos links do menu */
 nav a:hover{
   color: White;
 }
+/* Barra lateral */
 aside{
   background-color: gray;
   grid-row: 2 /7;
   grid-column: 1 /2;
 }
+/* Conteúdo principal */
 main{
   background-color: white;
   grid-row: 2 /7;
@@ -62,6 +70,7 @@ main{
   align-items: start;
   
 }
+/* Rodapé */
 footer{
   background-color:  rgb(255, 188, 65) ;
   grid-row: 7/8;

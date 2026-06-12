@@ -59,6 +59,9 @@ aside{
   background-color: gray;
   grid-row: 2 /7;
   grid-column: 1 /2;
+  display: flex;
+  flex-direction: column;
+  
 }
 /* Conteúdo principal */
 main{

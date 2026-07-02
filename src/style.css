@@ -1,292 +1,194 @@
 *{
-
-margin:0;
-padding:0;
-
-box-sizing:border-box;
-
-font-family:Arial, Helvetica, sans-serif;
-
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
-
-
 
 body{
-
-background:#f4f4f4;
-
-min-height:100vh;
-
+    background:#f4f4f4;
+    min-height:100vh;
 }
-
-
 
 /* HEADER */
 
-
 header{
-
-background:#ffbc41;
-
-padding:20px;
-
-text-align:center;
-
-position:relative;
-
+    background:#ffbc41;
+    padding:20px;
+    text-align:center;
+    position:relative;
 }
-
 
 .Logo{
-
-width:100px;
-
-position:absolute;
-
-left:20px;
-
-top:15px;
-
-border-radius:10px;
-
+    width:100px;
+    position:absolute;
+    left:20px;
+    top:15px;
+    border-radius:10px;
 }
-
-
 
 header h1{
-
-font-size:35px;
-
+    font-size:35px;
 }
-
-
 
 nav{
-
-margin-top:20px;
-
-display:flex;
-
-justify-content:center;
-
-gap:35px;
-
-flex-wrap:wrap;
-
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
 }
-
-
 
 nav a{
-
-text-decoration:none;
-
-color:black;
-
-font-weight:bold;
-
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    transition:.3s;
 }
-
 
 nav a:hover{
-
-color:white;
-
+    color:white;
 }
 
-
-
-
-
-/* CONTEUDO */
-
+/* CONTEÚDO */
 
 main{
-
-padding:40px;
-
+    padding:40px;
 }
-
-
 
 .banner{
-
-background:white;
-
-padding:50px;
-
-border-radius:20px;
-
-text-align:center;
-
-box-shadow:0 5px 15px #ccc;
-
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 15px #d5d5d5;
 }
-
-
 
 .banner h2{
-
-font-size:35px;
-
-margin-bottom:15px;
-
+    font-size:38px;
+    margin-bottom:15px;
 }
 
-
-
-
+.banner p{
+    color:#666;
+    font-size:18px;
+}
 
 .titulo{
-
-text-align:center;
-
-margin:40px;
-
+    text-align:center;
+    margin:45px 0;
+    font-size:32px;
 }
-
-
-
-
 
 /* PRODUTOS */
 
-
 .produtos{
-
-display:flex;
-
-justify-content:center;
-
-gap:30px;
-
-flex-wrap:wrap;
-
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
 }
-
-
 
 .produto{
-
-background:white;
-
-width:230px;
-
-padding:25px;
-
-border-radius:20px;
-
-text-align:center;
-
-box-shadow:0 5px 15px #ccc;
-
-transition:.3s;
-
+    background:white;
+    width:250px;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 15px #d5d5d5;
+    transition:.3s;
 }
-
-
 
 .produto:hover{
-
-transform:translateY(-10px);
-
+    transform:translateY(-10px);
 }
-
-
 
 .produto img{
-
-width:140px;
-
-height:140px;
-
-object-fit:contain;
-
+    width:150px;
+    height:150px;
+    object-fit:contain;
 }
 
+.produto h3{
+    margin:15px 0 10px;
+}
 
+.descricao{
+    color:#666;
+    min-height:45px;
+}
+
+.preco{
+    color:#2e7d32;
+    font-size:22px;
+    font-weight:bold;
+    margin:15px 0;
+}
 
 .produto button{
-
-margin-top:15px;
-
-background:#ffbc41;
-
-border:none;
-
-padding:10px 25px;
-
-border-radius:20px;
-
-cursor:pointer;
-
+    background:#ffbc41;
+    border:none;
+    padding:10px 25px;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
 }
 
-
-
-
+.produto button:hover{
+    background:#f0a900;
+}
 
 /* SOBRE */
 
-
 .sobre{
-
-margin-top:50px;
-
-background:white;
-
-padding:30px;
-
-border-radius:20px;
-
+    margin-top:50px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 5px 15px #d5d5d5;
 }
 
+.sobre h2{
+    margin-bottom:20px;
+}
 
+.sobre p{
+    line-height:1.8;
+    color:#555;
+}
 
-
-
-/* ASIDE */
-
+/* MENU RÁPIDO */
 
 aside{
-
-background:#111;
-
-padding:20px;
-
-display:flex;
-
-justify-content:center;
-
-gap:30px;
-
-flex-wrap:wrap;
-
+    background:#111;
+    padding:25px;
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+    align-items:center;
 }
 
-
-
-aside a, aside h3{
-
-color:white;
-
-text-decoration:none;
-
+aside h3{
+    color:#ffbc41;
 }
 
+aside a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
 
-
-
+aside a:hover{
+    color:#ffbc41;
+}
 
 /* FOOTER */
 
-
 footer{
-
-background:#ffbc41;
-
-padding:20px;
-
-text-align:center;
-
+    background:#ffbc41;
+    padding:20px;
+    text-align:center;
+    font-weight:bold;
 }
